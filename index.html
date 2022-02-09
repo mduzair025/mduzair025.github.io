@@ -1275,6 +1275,14 @@
         <script src="js/app.js"></script>
     </body>
     <script type="text/javascript">
-        console.log('hello world');
+        var settings = {
+          "url": "https://script.googleusercontent.com/macros/echo?user_content_key=wxIYoWvVuR2TyT7cfqjzL0x0noVGOxr-wp_sbbX2rnMsctIi_gJVbMBFvJS6_Gz5Hz4WNk0H-T6nzyDmQ_SLwwcQLCbDNhwmm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnBqNJ3JckeZh1Kf0wqO8ZdQUZGffJuSxppiLVptdKULWtliVV6C1dJqdNS0pDkwvaEWY2nZ7HPw5&lib=M0QgJczPE9B4W-lSP17r75vxoIipGXQsv",
+          "method": "GET",
+          "timeout": 0,
+        };
+
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+        });
     </script>
 </html>
